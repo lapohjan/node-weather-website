@@ -1,4 +1,4 @@
 node_modules/
 
-# forecast.js
-# geocode.js
+forecast.js
+geocode.js
