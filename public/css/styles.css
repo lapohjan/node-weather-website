@@ -4,7 +4,9 @@ body {
     max-width: 650px;
     margin: 0 auto;
     padding: 0 16px;
-
+    background-color: rgb(175, 239, 255);
+    background: url("https://source.unsplash.com/lREC-3pr_ts") no-repeat center
+    center/cover;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,7 +18,7 @@ body {
 
 footer {
     color: #888888;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid #8888885b;
     margin-top: 16px;
     padding: 16px 0;
 }
@@ -31,6 +33,33 @@ h1 {
     margin-bottom: 16px;
 }
 
+a {
+    text-decoration: none;
+}
+
+/* unvisited link */
+a:link {
+    color: rgb(29, 114, 251);
+}
+
+/* visited link */
+a:visited {
+    color: rgb(18, 7, 172);
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+    
+}
+
+/* selected link */
+a:active {
+    color: rgb(0, 255, 170);
+} 
+
+
+
 header a {
     color: #888888;
     margin-right: 16px;
@@ -38,7 +67,8 @@ header a {
 }
 
 .portrait {
-    width: 200px;
+    width: 150px;
+    border-radius: 10px;
 }
 
 input {
@@ -48,8 +78,8 @@ input {
 
 button {
     cursor: pointer;
-    border: 1px solid #888888;
-    background: #888888;
+    border: 1px solid #0059ff;
+    background:rgb(29, 114, 251);
     color: white;
     padding: 8px;
 }

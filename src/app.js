@@ -34,10 +34,13 @@ app.get('/about', (req, res) => {
     })
 })
 
-app.get('/help', (req, res) => {
-    res.render('help', {
-        helpText: 'This is some helpful text.',
-        title: 'Help',
+app.get('/links', (req, res) => {
+    res.render('links', {
+        linkText: 'Here are some links to other weather services:',
+        linkTextOne:'Finnish Meteorological Institute: Weather in Finland and abroad',
+        linkTextTwo:'Foreca: Weather in Helsinki and other cities',
+        linkTextThree:'The Weather Company: Weather all around the world',
+        title: 'Links',
         name: 'Laura Pohjanpalo'
     })
 })
@@ -81,11 +84,11 @@ app.get('/products', (req, res)=> {
     })
 })
 
-app.get('/help/*', (req, res) => {
+app.get('/links/*', (req, res) => {
    res.render('404', {
        title: '404',
        name: 'Laura Pohjanpalo',
-       errorMessage: 'Help article not found'
+       errorMessage: 'Links page not found'
    })
 })
 
